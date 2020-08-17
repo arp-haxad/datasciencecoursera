@@ -8,3 +8,13 @@ days <- c('m','t','w','t','f')
 stock.nm <- c('google','microsoft')
 colnames(stock.price) <- days
 rownames(stock.price) <- stock.nm
+print(stock.price)  
+
+# rbind and the c bind
+ fb <- c(456,345,345,234,555)
+ new.stlist <-rbind(stock.price,fb)
+ print(new.stlist)
+ avg <- rowMeans(new.stlist)
+ print(avg)
+ new.stlist <- cbind(new.stlist,avg)
+ print(new.stlist)

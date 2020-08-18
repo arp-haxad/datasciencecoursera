@@ -1,0 +1,18 @@
+a<- c(1,2,3)
+b<- c(4,5,6)
+mat <- rbind(a,b)
+print(mat)
+data <- 1:9
+mat2<- matrix(data,nrow = 3,byrow = T)
+print(mat2)
+print(is.matrix(mat2))
+mat3<- matrix(1:25,byrow =  T,nrow = 5)
+print(mat3)
+a1 <- mat3[2:3,2:3]
+print(a1)
+print(sum(mat3))
+print(colSums(mat3))
+print(rowSums(mat3))
+#runif(n, min = 0, max = 1)
+mat4 <-matrix(runif(20,min =0,max = 10),byrow = T, nrow =  4)
+print(mat4)
